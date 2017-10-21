@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Back-end') {
       agent {
-        docker { image 'phpunit' }
+        docker { image 'phpunit/phpunit' }
       }
       steps {
         sh 'composer install'
