@@ -6,6 +6,7 @@ pipeline {
         docker { image 'phpunit/phpunit' }
       }
       steps {
+	sh 'ls -la'
         sh 'composer install'
       }
     }
