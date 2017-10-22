@@ -6,7 +6,6 @@ pipeline {
         docker { image 'phpunit/phpunit' }
       }
       steps {
-	sh 'ls -la'
         sh 'HOME=/tmp composer install'
       }
     }
