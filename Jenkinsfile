@@ -7,7 +7,7 @@ pipeline {
       }
       steps {
 	sh 'ls -la'
-        sh 'composer install'
+        sh 'HOME=/tmp composer install'
       }
     }
   }
